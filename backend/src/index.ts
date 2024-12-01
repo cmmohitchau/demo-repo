@@ -7,6 +7,8 @@ const PORT = 3000;
 
 app.get('/' , async (req , res) => {
     const body = await req.body;
+    console.log(body);
+    
 
     res.status(200).json({
         username : body.username,
